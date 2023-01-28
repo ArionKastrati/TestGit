@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
-        Registration
+       Admin Registration
     </title>
     <link rel="stylesheet" href="style.css">
     
@@ -33,7 +33,6 @@
             <input type="text" name="last" placeholder="LastName" required>
             <input type="text" name="username" placeholder="Username" required><br><br>
             <input type="password" name="password" placeholder="Password" required><br><br>
-            <input type="text" name="roll" placeholder="RollNo" required=""><br>
             <input type="text" name="email" placeholder="Email" required><br>
             <input type="text" name="contact" placeholder="phone" required><br>
 
@@ -51,7 +50,7 @@
     if(isset($_POST['submit']))
     {
         $count = 0;
-        $sql="SELECT username from `student`";
+        $sql="SELECT username from `admin`";
         $res=mysqli_query($db,$sql);
         
 
@@ -63,8 +62,7 @@
             }
         }
      if($count==0)
-    {mysqli_query($db, "INSERT INTO `STUDENT` VALUES('$_POST[first]}', '$_POST[last]', '$_POST[username]', '$_POST[password]', '$_POST[roll]', '$_POST[email]', '$_POST[contact]');");
-    
+     {mysqli_query($db, "INSERT INTO `admin` VALUES('', '$_POST[first]}', '$_POST[last]', '$_POST[username]', '$_POST[password]', '$_POST[email]', '$_POST[contact]');");
     
     ?>
      <script type="text/javascript">

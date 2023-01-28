@@ -1,0 +1,61 @@
+.wrapper{
+    height: auto;
+
+}
+header{
+    height: 175px;
+    width: 1333;
+    background-color: black;
+}
+section{
+    height: 530px;
+    width: 1333px;
+    background-color: red;
+    
+    
+}
+footer{
+    height: 110px;
+    width: 1400px;
+    background-color: black;
+
+}
+
+
+li a{
+   color: red;
+   text-decoration: none;
+}
+nav{
+    float: right;
+    word-spacing: 35px;
+    padding: 20px;
+
+}
+nav li{
+    display: inline;
+    line-height: 30px;
+
+    
+}
+/*--------------------------------------------login------------------------*/
+.log_img{
+    height: 530px;
+    width: 1333px;
+    background-image: url("images/8.jpg");
+}
+input{
+    height: 25px;
+    width: 250px;
+}
+/*-----------------------------------registration-------------------------------------*/
+
+.reg_img{
+    height: 650px;
+    width: 1333px;
+    background-image: url("images/14.jpg");
+}
+
+
+/*-----------------------------------------contact us===================================*/
+

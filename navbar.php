@@ -35,23 +35,29 @@ session_start();
             <?php
               if(isset($_SESSION['login_user']))
               {?>
-              <ul class="nav navbar-nav">
-                <li><a href="profile.php">PROFILE</a></li>
-              </ul>
+                <ul class="nav navbar-nav">
+                  <li><a href="profile.php">PROFILE</a></li>
+                </ul>
+               
               <div style="color: red">
                 <?php
                   echo "Welcome " . $_SESSION['login_user'];
                 ?>
+                
               </div>
                  <li><a href="logout.php"><span class="glyphicon
                  glyphicon-log-in">LOG-OUT</span></a></li>
-                 <?php
+                 <ul class="nav navbar-nav">
+                 <li><a href="student.php">STUDENT-INFORMATION</a></li>
+                 </ul>
+               <?php
+                  
               }
               else
               {    ?>
                 <ul class="nav navbar-nav navbar-right">
 
-                <li><a href="login.php"><span class="glyphicon
+                <li><a href="admin_login.php"><span class="glyphicon
                  glyphicon-log-in">LOG-IN</span></a></li>
                 <li><a href="registration.php"><span class="glyphicon
                  glyphicon-user">SIGN-UP</span></a></li>
